@@ -1,0 +1,1256 @@
+{
+	"info": {
+		"_postman_id": "6b83a042-8a68-4808-87ca-345178fc4afa",
+		"name": "lara-react API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "category",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTk1ODg0NTFkNGRkYjVlZmU4MTZmZjQyZDZlMmI1MjQzNWY1MDZhY2IzMWI4ZjA0MzM1MzNlZTY1NDBhZTI5M2I5N2RiZWJhYWRiMzA3ZmEiLCJpYXQiOjE1Nzc3MDA2MDMsIm5iZiI6MTU3NzcwMDYwMywiZXhwIjoxNjA5MzIzMDAzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.H8MgTfd_PEMudcoKPhf-Ucmq6hOjMC1njkTB9A_Zz0ob1LLaUO1NVjjp8-SamzsLxQ6wY3hTnv-IW4uk4Ndsmcju2OjL0lq3eXZUUOpH_M8bKHbwh6hYCyBgltw1qxI5YaS5Ebxp89gZYLZy6-099ghbeEtboXYAQ-WtcZqxpprd8rgjd8YF5bP-dAHOb3mGuv358aU3vnnwp8WiowfoTDuaDpsiXOwSAOUSQ7ckKn1EAqK1Sc1n3pl2np37qMf2qJomtJSBznmFToSwYD5s-eHxLSd1G4wR1mdA3mIlxNN8mS5uBhJ9oxLC2hSZV-egdfro9zB1H2d2R7asVOm1M5Mm5R_bt7OKk-Jp0q7id0ZTlJ57tZ46ydtByijERzIedZrmjs9mrVLmXAg-DLgRweplrpT_KSBNWwwfb1jjFs1KELZWTQhxSWrnON-gehWGVPDCDBl_6iwSsdSjLB93J915Gfwaze-JLh4SZcH8yCcNspZkwoVbf76pa_cciHhcpVskX3KncBfhENQzROhOoGEDE3xBvS3pciv0VN0xtKyEYFk67MvUQanzXYxLmtZ5RxLedI2jyeJjDDTUNOQnNm_BRdCcFuiD-uJJqItTkz2rKNqr3Zmys5mi1-BRUx9LbkNTU1yyaOMrMVG3_JY7so24gGzdWSjayFm-7s2Q9Gg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/lara-react/public/api/category",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"lara-react",
+								"public",
+								"api",
+								"category"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "list",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/lara-react/public/api/category",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"lara-react",
+										"public",
+										"api",
+										"category"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 30 Dec 2019 10:14:42 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.39 (Win64) PHP/7.2.18"
+								},
+								{
+									"key": "Vary",
+									"value": "Authorization"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.18"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Content-Length",
+									"value": "300"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Food\",\n        \"created_at\": \"2019-12-30 10:12:42\",\n        \"updated_at\": \"2019-12-30 10:12:42\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Lost Animals\",\n        \"created_at\": \"2019-12-30 10:13:22\",\n        \"updated_at\": \"2019-12-30 10:13:22\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Incredible Birds\",\n        \"created_at\": \"2019-12-30 10:14:08\",\n        \"updated_at\": \"2019-12-30 10:14:08\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTk1ODg0NTFkNGRkYjVlZmU4MTZmZjQyZDZlMmI1MjQzNWY1MDZhY2IzMWI4ZjA0MzM1MzNlZTY1NDBhZTI5M2I5N2RiZWJhYWRiMzA3ZmEiLCJpYXQiOjE1Nzc3MDA2MDMsIm5iZiI6MTU3NzcwMDYwMywiZXhwIjoxNjA5MzIzMDAzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.H8MgTfd_PEMudcoKPhf-Ucmq6hOjMC1njkTB9A_Zz0ob1LLaUO1NVjjp8-SamzsLxQ6wY3hTnv-IW4uk4Ndsmcju2OjL0lq3eXZUUOpH_M8bKHbwh6hYCyBgltw1qxI5YaS5Ebxp89gZYLZy6-099ghbeEtboXYAQ-WtcZqxpprd8rgjd8YF5bP-dAHOb3mGuv358aU3vnnwp8WiowfoTDuaDpsiXOwSAOUSQ7ckKn1EAqK1Sc1n3pl2np37qMf2qJomtJSBznmFToSwYD5s-eHxLSd1G4wR1mdA3mIlxNN8mS5uBhJ9oxLC2hSZV-egdfro9zB1H2d2R7asVOm1M5Mm5R_bt7OKk-Jp0q7id0ZTlJ57tZ46ydtByijERzIedZrmjs9mrVLmXAg-DLgRweplrpT_KSBNWwwfb1jjFs1KELZWTQhxSWrnON-gehWGVPDCDBl_6iwSsdSjLB93J915Gfwaze-JLh4SZcH8yCcNspZkwoVbf76pa_cciHhcpVskX3KncBfhENQzROhOoGEDE3xBvS3pciv0VN0xtKyEYFk67MvUQanzXYxLmtZ5RxLedI2jyeJjDDTUNOQnNm_BRdCcFuiD-uJJqItTkz2rKNqr3Zmys5mi1-BRUx9LbkNTU1yyaOMrMVG3_JY7so24gGzdWSjayFm-7s2Q9Gg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\":\"Incredible Birds\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/lara-react/public/api/category",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"lara-react",
+								"public",
+								"api",
+								"category"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\":\"Incredible Birds\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/lara-react/public/api/category",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"lara-react",
+										"public",
+										"api",
+										"category"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 30 Dec 2019 10:14:08 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.39 (Win64) PHP/7.2.18"
+								},
+								{
+									"key": "Vary",
+									"value": "Authorization"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.18"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Content-Length",
+									"value": "133"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"success\",\n    \"data\": {\n        \"name\": \"Incredible Birds\",\n        \"updated_at\": \"2019-12-30 10:14:08\",\n        \"created_at\": \"2019-12-30 10:14:08\",\n        \"id\": 3\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTk1ODg0NTFkNGRkYjVlZmU4MTZmZjQyZDZlMmI1MjQzNWY1MDZhY2IzMWI4ZjA0MzM1MzNlZTY1NDBhZTI5M2I5N2RiZWJhYWRiMzA3ZmEiLCJpYXQiOjE1Nzc3MDA2MDMsIm5iZiI6MTU3NzcwMDYwMywiZXhwIjoxNjA5MzIzMDAzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.H8MgTfd_PEMudcoKPhf-Ucmq6hOjMC1njkTB9A_Zz0ob1LLaUO1NVjjp8-SamzsLxQ6wY3hTnv-IW4uk4Ndsmcju2OjL0lq3eXZUUOpH_M8bKHbwh6hYCyBgltw1qxI5YaS5Ebxp89gZYLZy6-099ghbeEtboXYAQ-WtcZqxpprd8rgjd8YF5bP-dAHOb3mGuv358aU3vnnwp8WiowfoTDuaDpsiXOwSAOUSQ7ckKn1EAqK1Sc1n3pl2np37qMf2qJomtJSBznmFToSwYD5s-eHxLSd1G4wR1mdA3mIlxNN8mS5uBhJ9oxLC2hSZV-egdfro9zB1H2d2R7asVOm1M5Mm5R_bt7OKk-Jp0q7id0ZTlJ57tZ46ydtByijERzIedZrmjs9mrVLmXAg-DLgRweplrpT_KSBNWwwfb1jjFs1KELZWTQhxSWrnON-gehWGVPDCDBl_6iwSsdSjLB93J915Gfwaze-JLh4SZcH8yCcNspZkwoVbf76pa_cciHhcpVskX3KncBfhENQzROhOoGEDE3xBvS3pciv0VN0xtKyEYFk67MvUQanzXYxLmtZ5RxLedI2jyeJjDDTUNOQnNm_BRdCcFuiD-uJJqItTkz2rKNqr3Zmys5mi1-BRUx9LbkNTU1yyaOMrMVG3_JY7so24gGzdWSjayFm-7s2Q9Gg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\":\"Foods\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/lara-react/public/api/category/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"lara-react",
+								"public",
+								"api",
+								"category",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\":\"Foods\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/lara-react/public/api/category/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"lara-react",
+										"public",
+										"api",
+										"category",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 30 Dec 2019 10:18:53 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.39 (Win64) PHP/7.2.18"
+								},
+								{
+									"key": "Vary",
+									"value": "Authorization"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.18"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Content-Length",
+									"value": "122"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"success\",\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"Foods\",\n        \"created_at\": \"2019-12-30 10:12:42\",\n        \"updated_at\": \"2019-12-30 10:18:53\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Show",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTk1ODg0NTFkNGRkYjVlZmU4MTZmZjQyZDZlMmI1MjQzNWY1MDZhY2IzMWI4ZjA0MzM1MzNlZTY1NDBhZTI5M2I5N2RiZWJhYWRiMzA3ZmEiLCJpYXQiOjE1Nzc3MDA2MDMsIm5iZiI6MTU3NzcwMDYwMywiZXhwIjoxNjA5MzIzMDAzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.H8MgTfd_PEMudcoKPhf-Ucmq6hOjMC1njkTB9A_Zz0ob1LLaUO1NVjjp8-SamzsLxQ6wY3hTnv-IW4uk4Ndsmcju2OjL0lq3eXZUUOpH_M8bKHbwh6hYCyBgltw1qxI5YaS5Ebxp89gZYLZy6-099ghbeEtboXYAQ-WtcZqxpprd8rgjd8YF5bP-dAHOb3mGuv358aU3vnnwp8WiowfoTDuaDpsiXOwSAOUSQ7ckKn1EAqK1Sc1n3pl2np37qMf2qJomtJSBznmFToSwYD5s-eHxLSd1G4wR1mdA3mIlxNN8mS5uBhJ9oxLC2hSZV-egdfro9zB1H2d2R7asVOm1M5Mm5R_bt7OKk-Jp0q7id0ZTlJ57tZ46ydtByijERzIedZrmjs9mrVLmXAg-DLgRweplrpT_KSBNWwwfb1jjFs1KELZWTQhxSWrnON-gehWGVPDCDBl_6iwSsdSjLB93J915Gfwaze-JLh4SZcH8yCcNspZkwoVbf76pa_cciHhcpVskX3KncBfhENQzROhOoGEDE3xBvS3pciv0VN0xtKyEYFk67MvUQanzXYxLmtZ5RxLedI2jyeJjDDTUNOQnNm_BRdCcFuiD-uJJqItTkz2rKNqr3Zmys5mi1-BRUx9LbkNTU1yyaOMrMVG3_JY7so24gGzdWSjayFm-7s2Q9Gg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/lara-react/public/api/category/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"lara-react",
+								"public",
+								"api",
+								"category",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Show",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/lara-react/public/api/category/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"lara-react",
+										"public",
+										"api",
+										"category",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 30 Dec 2019 10:19:58 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.39 (Win64) PHP/7.2.18"
+								},
+								{
+									"key": "Vary",
+									"value": "Authorization"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.18"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Content-Length",
+									"value": "93"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"name\": \"Foods\",\n    \"created_at\": \"2019-12-30 10:12:42\",\n    \"updated_at\": \"2019-12-30 10:18:53\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTk1ODg0NTFkNGRkYjVlZmU4MTZmZjQyZDZlMmI1MjQzNWY1MDZhY2IzMWI4ZjA0MzM1MzNlZTY1NDBhZTI5M2I5N2RiZWJhYWRiMzA3ZmEiLCJpYXQiOjE1Nzc3MDA2MDMsIm5iZiI6MTU3NzcwMDYwMywiZXhwIjoxNjA5MzIzMDAzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.H8MgTfd_PEMudcoKPhf-Ucmq6hOjMC1njkTB9A_Zz0ob1LLaUO1NVjjp8-SamzsLxQ6wY3hTnv-IW4uk4Ndsmcju2OjL0lq3eXZUUOpH_M8bKHbwh6hYCyBgltw1qxI5YaS5Ebxp89gZYLZy6-099ghbeEtboXYAQ-WtcZqxpprd8rgjd8YF5bP-dAHOb3mGuv358aU3vnnwp8WiowfoTDuaDpsiXOwSAOUSQ7ckKn1EAqK1Sc1n3pl2np37qMf2qJomtJSBznmFToSwYD5s-eHxLSd1G4wR1mdA3mIlxNN8mS5uBhJ9oxLC2hSZV-egdfro9zB1H2d2R7asVOm1M5Mm5R_bt7OKk-Jp0q7id0ZTlJ57tZ46ydtByijERzIedZrmjs9mrVLmXAg-DLgRweplrpT_KSBNWwwfb1jjFs1KELZWTQhxSWrnON-gehWGVPDCDBl_6iwSsdSjLB93J915Gfwaze-JLh4SZcH8yCcNspZkwoVbf76pa_cciHhcpVskX3KncBfhENQzROhOoGEDE3xBvS3pciv0VN0xtKyEYFk67MvUQanzXYxLmtZ5RxLedI2jyeJjDDTUNOQnNm_BRdCcFuiD-uJJqItTkz2rKNqr3Zmys5mi1-BRUx9LbkNTU1yyaOMrMVG3_JY7so24gGzdWSjayFm-7s2Q9Gg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/lara-react/public/api/category/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"lara-react",
+								"public",
+								"api",
+								"category",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "post",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTk1ODg0NTFkNGRkYjVlZmU4MTZmZjQyZDZlMmI1MjQzNWY1MDZhY2IzMWI4ZjA0MzM1MzNlZTY1NDBhZTI5M2I5N2RiZWJhYWRiMzA3ZmEiLCJpYXQiOjE1Nzc3MDA2MDMsIm5iZiI6MTU3NzcwMDYwMywiZXhwIjoxNjA5MzIzMDAzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.H8MgTfd_PEMudcoKPhf-Ucmq6hOjMC1njkTB9A_Zz0ob1LLaUO1NVjjp8-SamzsLxQ6wY3hTnv-IW4uk4Ndsmcju2OjL0lq3eXZUUOpH_M8bKHbwh6hYCyBgltw1qxI5YaS5Ebxp89gZYLZy6-099ghbeEtboXYAQ-WtcZqxpprd8rgjd8YF5bP-dAHOb3mGuv358aU3vnnwp8WiowfoTDuaDpsiXOwSAOUSQ7ckKn1EAqK1Sc1n3pl2np37qMf2qJomtJSBznmFToSwYD5s-eHxLSd1G4wR1mdA3mIlxNN8mS5uBhJ9oxLC2hSZV-egdfro9zB1H2d2R7asVOm1M5Mm5R_bt7OKk-Jp0q7id0ZTlJ57tZ46ydtByijERzIedZrmjs9mrVLmXAg-DLgRweplrpT_KSBNWwwfb1jjFs1KELZWTQhxSWrnON-gehWGVPDCDBl_6iwSsdSjLB93J915Gfwaze-JLh4SZcH8yCcNspZkwoVbf76pa_cciHhcpVskX3KncBfhENQzROhOoGEDE3xBvS3pciv0VN0xtKyEYFk67MvUQanzXYxLmtZ5RxLedI2jyeJjDDTUNOQnNm_BRdCcFuiD-uJJqItTkz2rKNqr3Zmys5mi1-BRUx9LbkNTU1yyaOMrMVG3_JY7so24gGzdWSjayFm-7s2Q9Gg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/lara-react/public/api/post",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"lara-react",
+								"public",
+								"api",
+								"post"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "List",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/lara-react/public/api/post",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"lara-react",
+										"public",
+										"api",
+										"post"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 30 Dec 2019 10:36:51 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.39 (Win64) PHP/7.2.18"
+								},
+								{
+									"key": "Vary",
+									"value": "Authorization"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.18"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1478"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"category_id\": \"1\",\n        \"title\": \"This is Amazing India\",\n        \"content\": \"<b>Gevolglik</b> sal die doelwitte van stakings die produsente se verander van veeleisende stygings in lone aan die beheer van hul aandeel in die produksie\",\n        \"status\": \"PUBLISH\",\n        \"created_at\": \"2019-12-30 10:33:10\",\n        \"updated_at\": \"2019-12-30 10:33:10\"\n    },\n    {\n        \"id\": 2,\n        \"category_id\": \"1\",\n        \"title\": \"Dus, al die arbeidsmag wat werk vir die samelewing is sielkundig apaties\",\n        \"content\": \"Omdat die een eenheid is al wat nodig is om in die <b>behoeftes</b> van 'n individu te voldoen, is die addisionele eenhede verkry vir die doel van spaar Daar is geen regverdiging vir sodanige <i>optrede</i>, deur die diktatoriale argument is dat die samelewing eintlik bestaan ​​uit talle segmente, waarvan een die likwidasie van ander onderneem om slegs te bly in krag\",\n        \"status\": \"DRAFT\",\n        \"created_at\": \"2019-12-30 10:34:35\",\n        \"updated_at\": \"2019-12-30 10:34:35\"\n    },\n    {\n        \"id\": 3,\n        \"category_id\": \"2\",\n        \"title\": \"Huisbediendes is 'n verskynsel wat langs slawerny kom\",\n        \"content\": \"Onder geskikte en selfs noodsaaklik voorwaardes wat vroue in staat stel om hul natuurlike rol, wat verskil van dié van mans uit te voer, is dié baie toestande wat goed vir 'n mens wat onbevoeg en belas met die swangerskap is Net so is, kan die eienaar van jou middel van vervoer Jy verlaat gestrand op die sypaadjie, en die eienaar van die huis kan jy hawelose maak.\",\n        \"status\": \"PUBLISH\",\n        \"created_at\": \"2019-12-30 10:35:36\",\n        \"updated_at\": \"2019-12-30 10:35:36\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTk1ODg0NTFkNGRkYjVlZmU4MTZmZjQyZDZlMmI1MjQzNWY1MDZhY2IzMWI4ZjA0MzM1MzNlZTY1NDBhZTI5M2I5N2RiZWJhYWRiMzA3ZmEiLCJpYXQiOjE1Nzc3MDA2MDMsIm5iZiI6MTU3NzcwMDYwMywiZXhwIjoxNjA5MzIzMDAzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.H8MgTfd_PEMudcoKPhf-Ucmq6hOjMC1njkTB9A_Zz0ob1LLaUO1NVjjp8-SamzsLxQ6wY3hTnv-IW4uk4Ndsmcju2OjL0lq3eXZUUOpH_M8bKHbwh6hYCyBgltw1qxI5YaS5Ebxp89gZYLZy6-099ghbeEtboXYAQ-WtcZqxpprd8rgjd8YF5bP-dAHOb3mGuv358aU3vnnwp8WiowfoTDuaDpsiXOwSAOUSQ7ckKn1EAqK1Sc1n3pl2np37qMf2qJomtJSBznmFToSwYD5s-eHxLSd1G4wR1mdA3mIlxNN8mS5uBhJ9oxLC2hSZV-egdfro9zB1H2d2R7asVOm1M5Mm5R_bt7OKk-Jp0q7id0ZTlJ57tZ46ydtByijERzIedZrmjs9mrVLmXAg-DLgRweplrpT_KSBNWwwfb1jjFs1KELZWTQhxSWrnON-gehWGVPDCDBl_6iwSsdSjLB93J915Gfwaze-JLh4SZcH8yCcNspZkwoVbf76pa_cciHhcpVskX3KncBfhENQzROhOoGEDE3xBvS3pciv0VN0xtKyEYFk67MvUQanzXYxLmtZ5RxLedI2jyeJjDDTUNOQnNm_BRdCcFuiD-uJJqItTkz2rKNqr3Zmys5mi1-BRUx9LbkNTU1yyaOMrMVG3_JY7so24gGzdWSjayFm-7s2Q9Gg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"category_id\":\"2\",\n\t\"title\":\"Huisbediendes is 'n verskynsel wat langs slawerny kom\",\n\t\"content\":\"Onder geskikte en selfs noodsaaklik voorwaardes wat vroue in staat stel om hul natuurlike rol, wat verskil van dié van mans uit te voer, is dié baie toestande wat goed vir 'n mens wat onbevoeg en belas met die swangerskap is Net so is, kan die eienaar van jou middel van vervoer Jy verlaat gestrand op die sypaadjie, en die eienaar van die huis kan jy hawelose maak.\",\n\t\"status\":\"PUBLISH\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/lara-react/public/api/post",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"lara-react",
+								"public",
+								"api",
+								"post"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"category_id\":\"1\",\n\t\"title\":\"This is Amazing India\",\n\t\"content\":\"<b>Gevolglik</b> sal die doelwitte van stakings die produsente se verander van veeleisende stygings in lone aan die beheer van hul aandeel in die produksie\",\n\t\"status\":\"PUBLISH\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/lara-react/public/api/post",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"lara-react",
+										"public",
+										"api",
+										"post"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 30 Dec 2019 10:33:10 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.39 (Win64) PHP/7.2.18"
+								},
+								{
+									"key": "Vary",
+									"value": "Authorization"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.18"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Content-Length",
+									"value": "345"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"success\",\n    \"data\": {\n        \"category_id\": \"1\",\n        \"title\": \"This is Amazing India\",\n        \"content\": \"<b>Gevolglik</b> sal die doelwitte van stakings die produsente se verander van veeleisende stygings in lone aan die beheer van hul aandeel in die produksie\",\n        \"status\": \"PUBLISH\",\n        \"updated_at\": \"2019-12-30 10:33:10\",\n        \"created_at\": \"2019-12-30 10:33:10\",\n        \"id\": 1\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTk1ODg0NTFkNGRkYjVlZmU4MTZmZjQyZDZlMmI1MjQzNWY1MDZhY2IzMWI4ZjA0MzM1MzNlZTY1NDBhZTI5M2I5N2RiZWJhYWRiMzA3ZmEiLCJpYXQiOjE1Nzc3MDA2MDMsIm5iZiI6MTU3NzcwMDYwMywiZXhwIjoxNjA5MzIzMDAzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.H8MgTfd_PEMudcoKPhf-Ucmq6hOjMC1njkTB9A_Zz0ob1LLaUO1NVjjp8-SamzsLxQ6wY3hTnv-IW4uk4Ndsmcju2OjL0lq3eXZUUOpH_M8bKHbwh6hYCyBgltw1qxI5YaS5Ebxp89gZYLZy6-099ghbeEtboXYAQ-WtcZqxpprd8rgjd8YF5bP-dAHOb3mGuv358aU3vnnwp8WiowfoTDuaDpsiXOwSAOUSQ7ckKn1EAqK1Sc1n3pl2np37qMf2qJomtJSBznmFToSwYD5s-eHxLSd1G4wR1mdA3mIlxNN8mS5uBhJ9oxLC2hSZV-egdfro9zB1H2d2R7asVOm1M5Mm5R_bt7OKk-Jp0q7id0ZTlJ57tZ46ydtByijERzIedZrmjs9mrVLmXAg-DLgRweplrpT_KSBNWwwfb1jjFs1KELZWTQhxSWrnON-gehWGVPDCDBl_6iwSsdSjLB93J915Gfwaze-JLh4SZcH8yCcNspZkwoVbf76pa_cciHhcpVskX3KncBfhENQzROhOoGEDE3xBvS3pciv0VN0xtKyEYFk67MvUQanzXYxLmtZ5RxLedI2jyeJjDDTUNOQnNm_BRdCcFuiD-uJJqItTkz2rKNqr3Zmys5mi1-BRUx9LbkNTU1yyaOMrMVG3_JY7so24gGzdWSjayFm-7s2Q9Gg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"category_id\":\"2\",\n\t\"title\":\"Huisbediendes is 'n verskynsel wat langs slawerny komssss\",\n\t\"content\":\"Onder geskikte en selfs noodsaaklik voorwaardes wat vroue in staat stel om hul natuurlike rol, wat verskil van dié van mans uit te voer, is dié baie toestande wat goed vir 'n mens wat onbevoeg en belas met die swangerskap is Net so is, kan die eienaar van jou middel van vervoer Jy verlaat gestrand op die sypaadjie, en die eienaar van die huis kan jy hawelose maak.\",\n\t\"status\":\"PUBLISH\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/lara-react/public/api/post/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"lara-react",
+								"public",
+								"api",
+								"post",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"category_id\":\"2\",\n\t\"title\":\"Huisbediendes is 'n verskynsel wat langs slawerny komssss\",\n\t\"content\":\"Onder geskikte en selfs noodsaaklik voorwaardes wat vroue in staat stel om hul natuurlike rol, wat verskil van dié van mans uit te voer, is dié baie toestande wat goed vir 'n mens wat onbevoeg en belas met die swangerskap is Net so is, kan die eienaar van jou middel van vervoer Jy verlaat gestrand op die sypaadjie, en die eienaar van die huis kan jy hawelose maak.\",\n\t\"status\":\"PUBLISH\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/lara-react/public/api/post/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"lara-react",
+										"public",
+										"api",
+										"post",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 30 Dec 2019 10:38:12 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.39 (Win64) PHP/7.2.18"
+								},
+								{
+									"key": "Vary",
+									"value": "Authorization"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.18"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Content-Length",
+									"value": "601"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"success\",\n    \"data\": {\n        \"id\": 3,\n        \"category_id\": \"2\",\n        \"title\": \"Huisbediendes is 'n verskynsel wat langs slawerny komssss\",\n        \"content\": \"Onder geskikte en selfs noodsaaklik voorwaardes wat vroue in staat stel om hul natuurlike rol, wat verskil van dié van mans uit te voer, is dié baie toestande wat goed vir 'n mens wat onbevoeg en belas met die swangerskap is Net so is, kan die eienaar van jou middel van vervoer Jy verlaat gestrand op die sypaadjie, en die eienaar van die huis kan jy hawelose maak.\",\n        \"status\": \"PUBLISH\",\n        \"created_at\": \"2019-12-30 10:35:36\",\n        \"updated_at\": \"2019-12-30 10:38:13\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Show",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTk1ODg0NTFkNGRkYjVlZmU4MTZmZjQyZDZlMmI1MjQzNWY1MDZhY2IzMWI4ZjA0MzM1MzNlZTY1NDBhZTI5M2I5N2RiZWJhYWRiMzA3ZmEiLCJpYXQiOjE1Nzc3MDA2MDMsIm5iZiI6MTU3NzcwMDYwMywiZXhwIjoxNjA5MzIzMDAzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.H8MgTfd_PEMudcoKPhf-Ucmq6hOjMC1njkTB9A_Zz0ob1LLaUO1NVjjp8-SamzsLxQ6wY3hTnv-IW4uk4Ndsmcju2OjL0lq3eXZUUOpH_M8bKHbwh6hYCyBgltw1qxI5YaS5Ebxp89gZYLZy6-099ghbeEtboXYAQ-WtcZqxpprd8rgjd8YF5bP-dAHOb3mGuv358aU3vnnwp8WiowfoTDuaDpsiXOwSAOUSQ7ckKn1EAqK1Sc1n3pl2np37qMf2qJomtJSBznmFToSwYD5s-eHxLSd1G4wR1mdA3mIlxNN8mS5uBhJ9oxLC2hSZV-egdfro9zB1H2d2R7asVOm1M5Mm5R_bt7OKk-Jp0q7id0ZTlJ57tZ46ydtByijERzIedZrmjs9mrVLmXAg-DLgRweplrpT_KSBNWwwfb1jjFs1KELZWTQhxSWrnON-gehWGVPDCDBl_6iwSsdSjLB93J915Gfwaze-JLh4SZcH8yCcNspZkwoVbf76pa_cciHhcpVskX3KncBfhENQzROhOoGEDE3xBvS3pciv0VN0xtKyEYFk67MvUQanzXYxLmtZ5RxLedI2jyeJjDDTUNOQnNm_BRdCcFuiD-uJJqItTkz2rKNqr3Zmys5mi1-BRUx9LbkNTU1yyaOMrMVG3_JY7so24gGzdWSjayFm-7s2Q9Gg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/lara-react/public/api/post/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"lara-react",
+								"public",
+								"api",
+								"post",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Show",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/lara-react/public/api/post/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"lara-react",
+										"public",
+										"api",
+										"post",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 30 Dec 2019 10:38:40 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.39 (Win64) PHP/7.2.18"
+								},
+								{
+									"key": "Vary",
+									"value": "Authorization"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.18"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57"
+								},
+								{
+									"key": "Content-Length",
+									"value": "572"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 3,\n    \"category_id\": \"2\",\n    \"title\": \"Huisbediendes is 'n verskynsel wat langs slawerny komssss\",\n    \"content\": \"Onder geskikte en selfs noodsaaklik voorwaardes wat vroue in staat stel om hul natuurlike rol, wat verskil van dié van mans uit te voer, is dié baie toestande wat goed vir 'n mens wat onbevoeg en belas met die swangerskap is Net so is, kan die eienaar van jou middel van vervoer Jy verlaat gestrand op die sypaadjie, en die eienaar van die huis kan jy hawelose maak.\",\n    \"status\": \"PUBLISH\",\n    \"created_at\": \"2019-12-30 10:35:36\",\n    \"updated_at\": \"2019-12-30 10:38:13\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTk1ODg0NTFkNGRkYjVlZmU4MTZmZjQyZDZlMmI1MjQzNWY1MDZhY2IzMWI4ZjA0MzM1MzNlZTY1NDBhZTI5M2I5N2RiZWJhYWRiMzA3ZmEiLCJpYXQiOjE1Nzc3MDA2MDMsIm5iZiI6MTU3NzcwMDYwMywiZXhwIjoxNjA5MzIzMDAzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.H8MgTfd_PEMudcoKPhf-Ucmq6hOjMC1njkTB9A_Zz0ob1LLaUO1NVjjp8-SamzsLxQ6wY3hTnv-IW4uk4Ndsmcju2OjL0lq3eXZUUOpH_M8bKHbwh6hYCyBgltw1qxI5YaS5Ebxp89gZYLZy6-099ghbeEtboXYAQ-WtcZqxpprd8rgjd8YF5bP-dAHOb3mGuv358aU3vnnwp8WiowfoTDuaDpsiXOwSAOUSQ7ckKn1EAqK1Sc1n3pl2np37qMf2qJomtJSBznmFToSwYD5s-eHxLSd1G4wR1mdA3mIlxNN8mS5uBhJ9oxLC2hSZV-egdfro9zB1H2d2R7asVOm1M5Mm5R_bt7OKk-Jp0q7id0ZTlJ57tZ46ydtByijERzIedZrmjs9mrVLmXAg-DLgRweplrpT_KSBNWwwfb1jjFs1KELZWTQhxSWrnON-gehWGVPDCDBl_6iwSsdSjLB93J915Gfwaze-JLh4SZcH8yCcNspZkwoVbf76pa_cciHhcpVskX3KncBfhENQzROhOoGEDE3xBvS3pciv0VN0xtKyEYFk67MvUQanzXYxLmtZ5RxLedI2jyeJjDDTUNOQnNm_BRdCcFuiD-uJJqItTkz2rKNqr3Zmys5mi1-BRUx9LbkNTU1yyaOMrMVG3_JY7so24gGzdWSjayFm-7s2Q9Gg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/lara-react/public/api/post/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"lara-react",
+								"public",
+								"api",
+								"post",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Status",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTk1ODg0NTFkNGRkYjVlZmU4MTZmZjQyZDZlMmI1MjQzNWY1MDZhY2IzMWI4ZjA0MzM1MzNlZTY1NDBhZTI5M2I5N2RiZWJhYWRiMzA3ZmEiLCJpYXQiOjE1Nzc3MDA2MDMsIm5iZiI6MTU3NzcwMDYwMywiZXhwIjoxNjA5MzIzMDAzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.H8MgTfd_PEMudcoKPhf-Ucmq6hOjMC1njkTB9A_Zz0ob1LLaUO1NVjjp8-SamzsLxQ6wY3hTnv-IW4uk4Ndsmcju2OjL0lq3eXZUUOpH_M8bKHbwh6hYCyBgltw1qxI5YaS5Ebxp89gZYLZy6-099ghbeEtboXYAQ-WtcZqxpprd8rgjd8YF5bP-dAHOb3mGuv358aU3vnnwp8WiowfoTDuaDpsiXOwSAOUSQ7ckKn1EAqK1Sc1n3pl2np37qMf2qJomtJSBznmFToSwYD5s-eHxLSd1G4wR1mdA3mIlxNN8mS5uBhJ9oxLC2hSZV-egdfro9zB1H2d2R7asVOm1M5Mm5R_bt7OKk-Jp0q7id0ZTlJ57tZ46ydtByijERzIedZrmjs9mrVLmXAg-DLgRweplrpT_KSBNWwwfb1jjFs1KELZWTQhxSWrnON-gehWGVPDCDBl_6iwSsdSjLB93J915Gfwaze-JLh4SZcH8yCcNspZkwoVbf76pa_cciHhcpVskX3KncBfhENQzROhOoGEDE3xBvS3pciv0VN0xtKyEYFk67MvUQanzXYxLmtZ5RxLedI2jyeJjDDTUNOQnNm_BRdCcFuiD-uJJqItTkz2rKNqr3Zmys5mi1-BRUx9LbkNTU1yyaOMrMVG3_JY7so24gGzdWSjayFm-7s2Q9Gg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/lara-react/public/api/post/status",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"lara-react",
+								"public",
+								"api",
+								"post",
+								"status"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Status",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/lara-react/public/api/post/status",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"lara-react",
+										"public",
+										"api",
+										"post",
+										"status"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 30 Dec 2019 10:45:34 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.39 (Win64) PHP/7.2.18"
+								},
+								{
+									"key": "Vary",
+									"value": "Authorization"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.18"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "56"
+								},
+								{
+									"key": "Content-Length",
+									"value": "37"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=99"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"PUBLISH\": \"PUBLISH\",\n    \"DRAFT\": \"DRAFT\"\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"admin@gmail.com\",\n\t\"password\":\"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/lara-react/public/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"lara-react",
+						"public",
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"ronak\",\n\t\"email\":\"admin@gmail.com\",\n\t\"password\":\"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/lara-react/public/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"lara-react",
+						"public",
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMDJjOWUyMTY2ZTgwZDNmNTFlZWI3ZGE4YjgyNGI0OTdlY2RkNzFjZjUyNGI2YjQ1MTI0MTQyN2QwMTk2ZTkwOTk4MTcwNGZkZGJlNzM4ZGIiLCJpYXQiOjE1Nzc2OTE0MjgsIm5iZiI6MTU3NzY5MTQyOCwiZXhwIjoxNjA5MzEzODI4LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.L9yjQrXbj8OvHoUyuGtJFVdvI_tNKOg7zbYLapBl1LSBalbCzfH1SWPcm31dZH1tu96b9JI2_EUOosXwOAekPK9dv3Yx0vILRI4yZmcgORUMhtAPyaX2JFga4H8xwV5Tlwbg5HmvlV4oKLtuiQnzjVPg5p4GeuGbzE9imlyPpW8QnUSHFBI0zCKrQ68c47K0kVSYTU6FT_bagYYDc1hI6uWl4pL2ZRzjGK5G1Yj0BkO6ib77KMES57TTKR5_RLIfsBjPVA9rV-O2BLO9f5CdlGhhEeM2OObeUP3irAwBtYKedDj9EUgb_ultZ9VVrqZLOqlr9papuCGHjG9F7-7_e1pGqcXQFqQCpqlcjn_XExrqAFYFaWLh8qI5uaR94XKr6K2Aj8gd1LfmLizIapXUlok8ySp6Ln-T5b6OREE1fQSvaHeEby7hq7dbyEtRS_hB4mPe6dfYFu1Gzwh9_p0VbhYQry5wmu0TiJkicayJ-5Dgyx9uYyNfTOpk8oq2NEYrUwCMK49fgKSYpst87Cv5MRC7ZVUjqfNPSZdyX4B8ynmcm-CqGSzYJJY4AHK3MVKQgEnuGixgxPJ51FmUmcUritThX4FDOPIoP4vL13qfVHvCZLL7rumifR_jAxZR5ptmTN3uRHqsjSnhV-QX1k_kk3oKhGTE2AafJr7i7IZlRIc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/lara-react/public/api/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"lara-react",
+						"public",
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
