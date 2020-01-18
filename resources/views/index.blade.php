@@ -12,6 +12,7 @@
 <body>
 <div id="index"></div>
 <script>
+    const main_url = "{{ asset('') }}";
     const base_url = "{{ asset('') }}".replace(/^(?:\/\/|[^\/]+)*\//, "");
 </script>
 <script src="{{ asset('js/app.js') }}"></script>

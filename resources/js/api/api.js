@@ -1,6 +1,7 @@
 import axios from 'axios'
 
-const baseUrl = "http://localhost/lara-react/public/api";
+const baseUrl = main_url + "api";
+
 const getAuthClient = () => {
     let token = localStorage.getItem('token');
     return axios.create({
