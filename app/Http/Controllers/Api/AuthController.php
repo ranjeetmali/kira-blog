@@ -23,7 +23,7 @@ class AuthController extends Controller
         if (Auth::attempt(['email' => $request->get('email'), 'password' => $request->get('password')])) {
             $user = Auth::user();
             $token = $user->createToken('LoginToken');
-            return response()->json(['token' => $token->accessToken]);
+            return response()->json(['user' => $user, 'token' => $token->accessToken]);
         } else {
             return response()->json(['error' => ['password' => 'These credentials do not match our records.']], 401);
         }

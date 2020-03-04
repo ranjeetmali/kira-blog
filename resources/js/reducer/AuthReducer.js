@@ -1,7 +1,8 @@
-const AuthReducer = (authData = false, action) => {
+const AuthReducer = (authData = null, action) => {
     switch (action.type) {
         case "AUTH_SUCCESS":
-            return true;
+            return {...action.payload};
+        //return true;
         case "AUTH_FAILED":
             return false;
         default:

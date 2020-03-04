@@ -1,5 +1,6 @@
-export const authSuccess = () => {
-    return {type: "AUTH_SUCCESS"}
+export const authSuccess = (user) => {
+    return {type: 'AUTH_SUCCESS', payload: user}
+    //return {type: "AUTH_SUCCESS"}
 };
 
 export const authFailed = () => {

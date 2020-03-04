@@ -15,6 +15,7 @@ class Header extends Component {
     }
 
     componentDidMount() {
+
         requestGetUser().then(response => {
             let user = response.data;
             this.setState({
@@ -22,6 +23,7 @@ class Header extends Component {
                 email: user.email
             });
         }).catch(error => {
+            console.log("HD");
             console.log(error);
         });
     }
@@ -37,6 +39,7 @@ class Header extends Component {
     };
 
     render() {
+
         return <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div className="container-fluid">
                 <Link className="navbar-brand" to='/'><strong>K<span className='text-warning'>!</span>ra</strong></Link>

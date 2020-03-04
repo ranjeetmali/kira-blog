@@ -47,7 +47,7 @@ class Login extends Component {
                     passwordError: ""
                 }
             });
-            this.props.authSuccess();
+            this.props.authSuccess(response.data.user);
             toast.success("Successfully login");
             this.props.history.push("/dashboard");
         }).catch((error) => {
@@ -63,6 +63,7 @@ class Login extends Component {
     };
 
     render() {
+        console.log("REN");
         return (<div className='row mt-4'>
             <div className='col-12'>
                 <div className="card w-50 m-auto">
@@ -109,8 +110,8 @@ class Login extends Component {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        authSuccess: () => {
-            dispatch(authSuccess());
+        authSuccess: (user) => {
+            dispatch(authSuccess(user));
         }
     }
 };

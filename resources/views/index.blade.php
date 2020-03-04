@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kira Blog</title>
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{asset('css/app.css')}}">
+    <link rel="stylesheet" href="{{asset('css/app.css')}}?v={{uniqid()}}">
 </head>
 <body>
 <div id="index"></div>
@@ -15,6 +15,6 @@
     const main_url = "{{ asset('') }}";
     const base_url = "{{ asset('') }}".replace(/^(?:\/\/|[^\/]+)*\//, "");
 </script>
-<script src="{{ asset('js/app.js') }}"></script>
+<script src="{{ asset('js/app.js') }}?v={{uniqid()}}"></script>
 </body>
 </html>
