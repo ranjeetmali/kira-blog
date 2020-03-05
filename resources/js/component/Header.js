@@ -6,28 +6,6 @@ import {requestGetUser, requestUserLogout} from "../api/api";
 import {toast} from "react-toastify";
 
 class Header extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            name: "",
-            email: ""
-        };
-    }
-
-    componentDidMount() {
-
-        requestGetUser().then(response => {
-            let user = response.data;
-            this.setState({
-                name: user.name,
-                email: user.email
-            });
-        }).catch(error => {
-            console.log("HD");
-            console.log(error);
-        });
-    }
-
     Logout = () => {
         requestUserLogout().then((response) => {
             this.props.logout();
@@ -38,8 +16,8 @@ class Header extends Component {
         });
     };
 
-    render() {
 
+    render() {
         return <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div className="container-fluid">
                 <Link className="navbar-brand" to='/'><strong>K<span className='text-warning'>!</span>ra</strong></Link>
@@ -92,7 +70,7 @@ class Header extends Component {
                                 <li className="nav-item dropdown">
                                     <Link className="nav-link dropdown-toggle" to="#" id="navbardrop"
                                           data-toggle="dropdown">
-                                        {this.state.name}
+                                        {this.props.isAuthenticated.name}
                                     </Link>
                                     <div className="dropdown-menu">
                                         <Link className="dropdown-item" to='/profile'>Profile</Link>
@@ -110,6 +88,7 @@ class Header extends Component {
 }
 
 const mapStateToProps = (state) => {
+    // console.log("x",state);
     return {
         isAuthenticated: state.AuthReducer,
     };

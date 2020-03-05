@@ -7,6 +7,7 @@ import {requestGetDashboardStatistics} from "../api/api";
 class Dashboard extends Component {
 
     constructor(props) {
+
         super(props);
         this.state = {
             categoryCount: "",

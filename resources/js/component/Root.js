@@ -38,7 +38,6 @@ class Root extends Component {
     componentDidMount() {
         if (localStorage.getItem('token') != null) {
             requestGetUser().then(response => {
-                console.log(response.data)
                 store.dispatch(authSuccess(response.data));
             }).catch(error => {
                 console.log(error);
