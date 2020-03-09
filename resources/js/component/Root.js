@@ -69,27 +69,18 @@ class Root extends Component {
 
                             <Route exact path='/post/:postId/public' component={PostView}/>
 
-                            <PrivateRoute exact path='/dashboard' component={Dashboard}
-                                          isAuthenticated={this.props.isAuthenticated}/>
+                            <PrivateRoute exact path='/dashboard' component={Dashboard}/>
 
-                            <PrivateRoute exact path='/profile' component={Profile}
-                                          isAuthenticated={this.props.isAuthenticated}/>
+                            <PrivateRoute exact path='/profile' component={Profile}/>
 
-                            <PrivateRoute exact path='/category' component={CategoryList}
-                                          isAuthenticated={this.props.isAuthenticated}/>
-                            <PrivateRoute exact path='/category/create' component={CategoryCreate}
-                                          isAuthenticated={this.props.isAuthenticated}/>
-                            <PrivateRoute exact path='/category/:categoryId/edit' component={CategoryEdit}
-                                          isAuthenticated={this.props.isAuthenticated}/>
+                            <PrivateRoute exact path='/category' component={CategoryList}/>
+                            <PrivateRoute exact path='/category/create' component={CategoryCreate}/>
+                            <PrivateRoute exact path='/category/:categoryId/edit' component={CategoryEdit}/>
 
-                            <PrivateRoute exact path='/blog' component={PostList}
-                                          isAuthenticated={this.props.isAuthenticated}/>
-                            <PrivateRoute exact path='/blog/create' component={PostCreate}
-                                          isAuthenticated={this.props.isAuthenticated}/>
-                            <PrivateRoute exact path='/blog/:postId/edit' component={PostEdit}
-                                          isAuthenticated={this.props.isAuthenticated}/>
-                            <PrivateRoute exact path='/blog/:postId' component={PostShow}
-                                          isAuthenticated={this.props.isAuthenticated}/>
+                            <PrivateRoute exact path='/blog' component={PostList}/>
+                            <PrivateRoute exact path='/blog/create' component={PostCreate}/>
+                            <PrivateRoute exact path='/blog/:postId/edit' component={PostEdit}/>
+                            <PrivateRoute exact path='/blog/:postId' component={PostShow}/>
 
                             <Route exact path='/about' component={About}/>
                             <Route exact path='/login' component={Login}/>
