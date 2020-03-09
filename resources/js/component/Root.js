@@ -30,21 +30,20 @@ import RootReducer from "../reducer/RootReducer";
 import {Provider} from "react-redux";
 import {requestGetUser} from "../api/api";
 import NotFound from "./NotFound";
+import {connect} from "react-redux";
 
 const store = createStore(RootReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
+if (localStorage.getItem('token') != null) {
+    store.dispatch(authSuccess(true));
+    requestGetUser().then(response => {
+        store.dispatch(authSuccess(response.data));
+    }).catch(error => {
+        console.log(error);
+    });
+}
 
 class Root extends Component {
-    componentDidMount() {
-        if (localStorage.getItem('token') != null) {
-            requestGetUser().then(response => {
-                store.dispatch(authSuccess(response.data));
-            }).catch(error => {
-                console.log(error);
-            });
-        }
-    }
-
     render() {
         return (
             <BrowserRouter basename={base_url}>
@@ -70,18 +69,27 @@ class Root extends Component {
 
                             <Route exact path='/post/:postId/public' component={PostView}/>
 
-                            <PrivateRoute exact path='/dashboard' component={Dashboard}/>
+                            <PrivateRoute exact path='/dashboard' component={Dashboard}
+                                          isAuthenticated={this.props.isAuthenticated}/>
 
-                            <PrivateRoute exact path='/profile' component={Profile}/>
+                            <PrivateRoute exact path='/profile' component={Profile}
+                                          isAuthenticated={this.props.isAuthenticated}/>
 
-                            <PrivateRoute exact path='/category' component={CategoryList}/>
-                            <PrivateRoute exact path='/category/create' component={CategoryCreate}/>
-                            <PrivateRoute exact path='/category/:categoryId/edit' component={CategoryEdit}/>
+                            <PrivateRoute exact path='/category' component={CategoryList}
+                                          isAuthenticated={this.props.isAuthenticated}/>
+                            <PrivateRoute exact path='/category/create' component={CategoryCreate}
+                                          isAuthenticated={this.props.isAuthenticated}/>
+                            <PrivateRoute exact path='/category/:categoryId/edit' component={CategoryEdit}
+                                          isAuthenticated={this.props.isAuthenticated}/>
 
-                            <PrivateRoute exact path='/blog' component={PostList}/>
-                            <PrivateRoute exact path='/blog/create' component={PostCreate}/>
-                            <PrivateRoute exact path='/blog/:postId/edit' component={PostEdit}/>
-                            <PrivateRoute exact path='/blog/:postId' component={PostShow}/>
+                            <PrivateRoute exact path='/blog' component={PostList}
+                                          isAuthenticated={this.props.isAuthenticated}/>
+                            <PrivateRoute exact path='/blog/create' component={PostCreate}
+                                          isAuthenticated={this.props.isAuthenticated}/>
+                            <PrivateRoute exact path='/blog/:postId/edit' component={PostEdit}
+                                          isAuthenticated={this.props.isAuthenticated}/>
+                            <PrivateRoute exact path='/blog/:postId' component={PostShow}
+                                          isAuthenticated={this.props.isAuthenticated}/>
 
                             <Route exact path='/about' component={About}/>
                             <Route exact path='/login' component={Login}/>
@@ -103,8 +111,15 @@ class Root extends Component {
     }
 }
 
-export default Root;
+function mapStateToProps(state) {
+    return {
+        isAuthenticated: state.isAuthenticated,
+    };
+}
+
+const MainComp = connect(mapStateToProps, null)(Root);
+export default MainComp;
 
 if (document.getElementById('index')) {
-    ReactDOM.render(<Provider store={store}><Root/></Provider>, document.getElementById('index'));
+    ReactDOM.render(<Provider store={store}><MainComp/></Provider>, document.getElementById('index'));
 }

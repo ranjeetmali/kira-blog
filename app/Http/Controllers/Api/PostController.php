@@ -21,7 +21,7 @@ class PostController extends Controller
         $featuredImageUrl = url('storage/post_img/') . "/";
         $featuredImageThumbUrl = url('storage/post_img/thumb') . "/";
         $posts = Post::with('category')->select('*', DB::raw('CONCAT("' . $featuredImageUrl . '",featured_image) AS featured_image_url'), DB::raw('CONCAT("' . $featuredImageThumbUrl . '",featured_image) AS featured_image_thumb_url'))
-            ->get();
+            ->latest()->get();
         return response()->json($posts, 200);
     }
 
