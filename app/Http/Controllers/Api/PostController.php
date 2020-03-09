@@ -60,6 +60,7 @@ class PostController extends Controller
         }
 
         $post = Post::create($data);
+        $post->load('category');
 
         $featuredImageUrl = url('storage/post_img/') . "/";
         $featuredImageThumbUrl = url('storage/post_img/thumb') . "/";
@@ -140,6 +141,8 @@ class PostController extends Controller
         }
 
         $post->update($data);
+
+        $post->load('category');
 
         $featuredImageUrl = url('storage/post_img/') . "/";
         $featuredImageThumbUrl = url('storage/post_img/thumb') . "/";
