@@ -52,35 +52,34 @@ class Header extends Component {
                             <NavLink activeClassName='active' className="nav-link" to='/about'>About</NavLink>
                         </li>
                     </ul>
-                    <div className="collapse navbar-collapse" id="navbarResponsive">
 
-                        <ul className="navbar-nav ml-auto">
-                            {!this.props.isAuthenticated ?
-                                <React.Fragment>
-                                    <li className="nav-item">
-                                        <NavLink activeClassName='active' className="nav-link"
-                                                 to='/login'>Login</NavLink>
-                                    </li>
-                                    <li className="nav-item">
-                                        <NavLink activeClassName='active' className="nav-link"
-                                                 to='/register'>Register</NavLink>
-                                    </li>
-                                </React.Fragment>
-                                :
-                                <li className="nav-item dropdown">
-                                    <Link className="nav-link dropdown-toggle" to="#" id="navbardrop"
-                                          data-toggle="dropdown">
-                                        {this.props.isAuthenticated.name}
-                                    </Link>
-                                    <div className="dropdown-menu">
-                                        <Link className="dropdown-item" to='/profile'>Profile</Link>
-                                        <button className="dropdown-item" onClick={this.Logout}>Logout
-                                        </button>
-                                    </div>
+                    <ul className="navbar-nav ml-auto">
+                        {!this.props.isAuthenticated ?
+                            <React.Fragment>
+                                <li className="nav-item">
+                                    <NavLink activeClassName='active' className="nav-link"
+                                             to='/login'>Login</NavLink>
                                 </li>
-                            }
-                        </ul>
-                    </div>
+                                <li className="nav-item">
+                                    <NavLink activeClassName='active' className="nav-link"
+                                             to='/register'>Register</NavLink>
+                                </li>
+                            </React.Fragment>
+                            :
+                            <li className="nav-item dropdown">
+                                <Link className="nav-link dropdown-toggle" to="#" id="navbardrop"
+                                      data-toggle="dropdown">
+                                    {this.props.isAuthenticated.name}
+                                </Link>
+                                <div className="dropdown-menu">
+                                    <Link className="dropdown-item" to='/profile'>Profile</Link>
+                                    <button className="dropdown-item" onClick={this.Logout}>Logout
+                                    </button>
+                                </div>
+                            </li>
+                        }
+                    </ul>
+
                 </div>
             </div>
         </nav>
