@@ -15,7 +15,7 @@ class CreatePostsTable extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('category_id');
+            $table->unsignedBigInteger('category_id');
             $table->string('title');
             $table->string('featured_image')->default('default.png');
             $table->text('content');

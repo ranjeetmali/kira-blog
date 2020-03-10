@@ -7,6 +7,7 @@ Full feathered react demo with laravel api. this demo include api with authentic
 - Generate base 64 key using `php artisan key:generate`
 - Create storage link ```php artisan storage:link```
 - Migrate database using `php artisan migrate`
+- Install laravel passport `php artisan passport:install`
 - Now run ```npm install``` for front react setup
 - App is ready for use
 
