@@ -1,7 +1,8 @@
-## Laravel React Demo
+# K!rablog
+### Laravel React Demo
 Full feathered react demo with laravel api. this demo include api with authentication, blog, and image upload examples.
 
-### Installation
+#### Installation
 - First clone repository and run `composer install`
 - Make new database and env file and set database credential
 - Generate base 64 key using `php artisan key:generate`
