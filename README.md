@@ -2,6 +2,9 @@
 ### Laravel React Demo
 Full feathered react demo with laravel api. this demo include api with authentication, blog, and image upload examples.
 
+#### Requirements
+- Laravel Requirement [here](https://laravel.com/docs/6.x#server-requirements)
+
 #### Installation
 - First clone repository and run `composer install`
 - Make new database and env file and set database credential
