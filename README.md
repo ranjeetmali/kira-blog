@@ -1,3 +1,4 @@
+![image](kira_mockup.jpg)
 # K!rablog
 ### Laravel React Demo
 Full feathered react demo with laravel api. this demo include api with authentication, blog, and image upload examples.
